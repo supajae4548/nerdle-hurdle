@@ -16,7 +16,7 @@ async function getTodaysWord() {
     try {
         const promise = await fetch(wordURL);
         const promisedResponse = await promise.json();
-        gameState.correctGuess = "PENIS" //promisedResponse.word.toUpperCase();
+        gameState.correctGuess = promisedResponse.word.toUpperCase();
     } catch (error) {
         gameState.correctGuess = "MOUNT";
         console.warn("Could not fetch word of the day, using default:", gameState.correctGuess);
