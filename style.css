@@ -7,6 +7,7 @@ main{
     justify-content: center;
     align-items: center;
     row-gap: 25px;
+    
 }
 .title{
     display: flex;
@@ -28,6 +29,9 @@ h1{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 8px;
+    max-width: 300px;
+    width: 100%;
+
     
 }
 .box{
@@ -53,7 +57,9 @@ h1{
 .keyboard-row{
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
+    max-width: 98vw;
+    width: 100%;
 }
 button{
     height: 55px;
